@@ -20,13 +20,32 @@ eval(data);
 ```
 <sup>Like I said before, please be careful when using this statement as it is [INCREDIBLY](https://stackoverflow.com/a/13167699/20472970) easy to accidentally run malicious code.  Since there is no other way to run code like this in gs, `eval` is the only alternative.</sup>
 
-### Full function (100 bytes)
+### Full function
 ``` javascript
+// Normal (100 bytes)
 function httpget(url) {
     let data = UrlFetchApp.fetch(url).getContentText();
     eval(data);
-
-    // if using in function form, replace the
-    // actual url with an assignable variable.
 }
+
+// when using in function form, replace the
+// actual url with an assignable variable.
+
+// Compressed (59 bytes)
+function l(s){eval(UrlFetchApp.fetch(s).getContentText());}
+```
+
+### Library (If interested)
+
+```
+1U5RzdkF4G3QdK9HKJ3B6ScNewj7KThz17yjAyXT3AM-neyNTJQ9qa7Qf
+```
+
+# Like content like this?
+
+Follow my [Github](https://github.com/WillDev12) or share (this means a lot to me)
+
+```
+https://github.com/WillDev12
+https://WillDev12.github.io
 ```
